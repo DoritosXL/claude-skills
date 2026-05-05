@@ -4,19 +4,25 @@ My personal collection of Claude Code skills — split into skills I've built my
 
 ## Install
 
-**Mac / Linux (bash/zsh):**
+1. Clone this repo
+2. Copy the skill folder(s) you want into `~/.claude/skills/`
+3. Restart Claude Code
+
+**Mac / Linux:**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/DoritosXL/claude-skills/main/install.sh | sh
+git clone https://github.com/DoritosXL/claude-skills.git
+cp -r claude-skills/self-made/copy-it ~/.claude/skills/
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-iwr -useb https://raw.githubusercontent.com/DoritosXL/claude-skills/main/install.ps1 | iex
+git clone https://github.com/DoritosXL/claude-skills.git
+Copy-Item -Recurse claude-skills\self-made\copy-it $env:USERPROFILE\.claude\skills\
 ```
 
-The installer lets you pick individual skills or install everything at once. Skills are dropped into `~/.claude/skills/` — restart Claude Code and they're ready to use.
+Replace `self-made/copy-it` with whichever skill(s) you want from the list below.
 
 ---
 
